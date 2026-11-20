@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE
+.vscode/
+
+# EEG datasets
+data/
+dataset/
+*.edf
+*.npy
+
+# Trained models
+*.keras
+*.h5
+*.weights.h5
+*.pt
+*.pth
+*.onnx
+
+# Uploaded EEG files
+outputs/uploaded_eeg/
+
+# Environment files
+.env
+
+# Cache
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db

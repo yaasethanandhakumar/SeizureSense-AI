@@ -1,0 +1,24 @@
+{
+    "model": "cnn_bilstm_attention_corrected.keras",
+    "test_samples": 467,
+    "normal_samples": 319,
+    "preictal_samples": 148,
+    "threshold": 0.5,
+    "accuracy": 0.721627408993576,
+    "precision": 0.5330882352941176,
+    "recall": 0.9797297297297297,
+    "f1_score": 0.6904761904761905,
+    "roc_auc": 0.8913623655002967,
+    "confusion_matrix": [
+        [
+            192,
+            127
+        ],
+        [
+            3,
+            145
+        ]
+    ],
+    "predicted_normal": 195,
+    "predicted_preictal": 272
+}

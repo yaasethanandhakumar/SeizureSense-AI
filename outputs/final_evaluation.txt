@@ -1,0 +1,78 @@
+FINAL MODEL EVALUATION
+======================
+
+Model: C:\Projects\Epilepsy Seizure Prediction\saved_models\cnn_bilstm_attention_corrected.keras
+Test samples: 467
+Selected Threshold: 0.5
+
+ROC-AUC: 0.8913
+
+THRESHOLD ANALYSIS
+==================
+
+Threshold | Accuracy | Precision | Recall | F1 | FP | TN
+---------------------------------------------------------------------------
+    0.68 |   0.7837 |    0.6054 | 0.9122 | 0.7278 | 88 | 231
+    0.69 |   0.7901 |    0.6147 | 0.9054 | 0.7322 | 84 | 235
+    0.70 |   0.7923 |    0.6175 | 0.9054 | 0.7342 | 83 | 236
+    0.71 |   0.8030 |    0.6333 | 0.8986 | 0.7430 | 77 | 242
+    0.72 |   0.7987 |    0.6298 | 0.8851 | 0.7360 | 77 | 242
+    0.73 |   0.8094 |    0.6468 | 0.8784 | 0.7450 | 71 | 248
+    0.74 |   0.8051 |    0.6462 | 0.8514 | 0.7347 | 69 | 250
+    0.75 |   0.8116 |    0.6613 | 0.8311 | 0.7365 | 63 | 256
+    0.76 |   0.8094 |    0.6630 | 0.8108 | 0.7295 | 61 | 258
+    0.77 |   0.8073 |    0.6629 | 0.7973 | 0.7239 | 60 | 259
+    0.78 |   0.8009 |    0.6627 | 0.7568 | 0.7066 | 57 | 262
+    0.79 |   0.7987 |    0.6646 | 0.7365 | 0.6987 | 55 | 264
+    0.80 |   0.8073 |    0.6859 | 0.7230 | 0.7039 | 49 | 270
+    0.81 |   0.8073 |    0.6959 | 0.6959 | 0.6959 | 45 | 274
+    0.82 |   0.8180 |    0.7333 | 0.6689 | 0.6996 | 36 | 283
+
+
+THRESHOLD SUMMARY
+=================
+
+Best Accuracy Threshold: 0.82
+Accuracy: 0.8180
+Precision: 0.7333
+Recall: 0.6689
+
+Best Precision Threshold: 0.82
+Accuracy: 0.8180
+Precision: 0.7333
+Recall: 0.6689
+
+Best F1 Threshold: 0.73
+Accuracy: 0.8094
+Precision: 0.6468
+Recall: 0.8784
+
+FINAL SELECTED THRESHOLD RESULTS
+=================================
+
+Threshold: 0.5
+
+Accuracy     : 0.7216
+Precision    : 0.5331
+Recall       : 0.9797
+F1-Score     : 0.6905
+ROC-AUC      : 0.8913
+Specificity  : 0.6019
+False Positives: 127
+False Negatives: 3
+True Negatives : 192
+True Positives : 145
+
+Confusion Matrix:
+[[192 127]
+ [  3 145]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.98      0.60      0.75       319
+    Preictal       0.53      0.98      0.69       148
+
+    accuracy                           0.72       467
+   macro avg       0.76      0.79      0.72       467
+weighted avg       0.84      0.72      0.73       467
