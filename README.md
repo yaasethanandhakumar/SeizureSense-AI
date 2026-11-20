@@ -32,7 +32,8 @@ flowchart TD
     H --> I[Preictal Classification]
     I --> J[Threshold-Based Prediction]
     J --> K[Streamlit Dashboard]
-    
+```
+
 ## Model Architecture
 
 1. **CNN** – Extracts relevant features from EEG signals.
