@@ -18,6 +18,21 @@ The framework combines Convolutional Neural Networks (CNN), Bidirectional Long S
 - Interactive Streamlit dashboard
 - EEG prediction visualization
 
+## Project Workflow
+
+```mermaid
+flowchart TD
+    A[CHB-MIT EEG Dataset] --> B[EEG Preprocessing]
+    B --> C[EEG Segmentation]
+    C --> D[Recording-Level Data Split]
+    D --> E[Training-Based Normalization]
+    E --> F[CNN Feature Extraction]
+    F --> G[BiLSTM Temporal Learning]
+    G --> H[Attention Mechanism]
+    H --> I[Preictal Classification]
+    I --> J[Threshold-Based Prediction]
+    J --> K[Streamlit Dashboard]
+    
 ## Model Architecture
 
 1. **CNN** – Extracts relevant features from EEG signals.
